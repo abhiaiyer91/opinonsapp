@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="Opinions">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Opinions</title>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+            
+            <div ng-include src="'templates/globals/nav.html'"></div>
+
+            <div ng-view></div>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular-resource.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular-sanitize.min.js"></script>      
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular-route.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+
+  
+        <script src="/javascripts/app.js"></script>
+        <script src="/javascripts/services/services.js"></script>
+        <script src="/javascripts/controllers/PollListCtrl.js"></script>
+    </body>
+</html>
